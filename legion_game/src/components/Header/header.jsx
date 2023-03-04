@@ -1,7 +1,9 @@
+import Navbar from "./Navbar/navbar";
+
 const Header = () =>{
     return(
         <header>
-            I am header b!tch
+            <Navbar/>
         </header>
     )   
 }
