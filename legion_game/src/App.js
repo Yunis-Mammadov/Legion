@@ -1,6 +1,9 @@
+import Routing from "./routes";
+
 const App = () => {
   return (
     <>
+    <Routing/>
     </>
   );
 }
