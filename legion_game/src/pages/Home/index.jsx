@@ -1,16 +1,18 @@
 import { Box } from "@mui/material";
 import PageContainer from "../../components/PageContainer";
-import './home.css';
 
 
 const Home = () =>{
     return(
         <PageContainer>
-           <Box>
            <Box sx={{
-        }}>
+            backgroundImage:`url("bg_img.jpg")`,
+            backgroundRepeat:'no-repeat',
+            backgroundSize:'cover',
+            height:"100vh"
+           }}>
+                klcsdndkl
            </Box>
-            </Box>
         </PageContainer>
     )
 }
