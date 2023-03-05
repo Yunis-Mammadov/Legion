@@ -11,7 +11,6 @@ const Home = () =>{
             backgroundSize:'cover',
             height:"100vh"
            }}>
-                klcsdndkl
            </Box>
         </PageContainer>
     )
