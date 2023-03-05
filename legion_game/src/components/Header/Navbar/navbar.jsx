@@ -8,8 +8,12 @@ import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
-const pages = ['Setlər', 'Yeməklər', 'İçkilər'];
+const page1 = ['Setlər'];
+const page2 = ['Yeməklər'];
+const page3 = ['İçkilər'];
+
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -24,7 +28,8 @@ function Navbar() {
 
   return (
     
-      
+    
+
     <AppBar position="static">
 
         <Toolbar sx={{
@@ -38,7 +43,7 @@ function Navbar() {
 
 
             <Box  sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' },justifyContent:'center' }}>
-              {pages.map((page) => (
+              {page1.map((page) => (
                 <Button
                 key={page}
                 onClick={handleCloseNavMenu}
@@ -86,9 +91,19 @@ function Navbar() {
                 display: { xs: 'block', md: 'none' },
               }}
               >
-              {pages.map((page) => (
+              {page1.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                    <Link to="/setler">Setlər</Link>
+                </MenuItem>
+              ))}
+              {page2.map((page) => (
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Link to="/yemekler">Yeməklər</Link>
+                </MenuItem>
+              ))}
+              {page3.map((page) => (
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Link to="/ickiler">İçkilər</Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -96,6 +111,8 @@ function Navbar() {
               {/* responsive bar */}
 
 
+              {/* // <Link to="/yemekler">u</Link>
+              // <Link to="/ickiler">d</Link> */}
 
             {/* responsive legion */}
           <Typography
@@ -117,11 +134,6 @@ function Navbar() {
             Legion
           </Typography>
               {/* responsive legion*/}
-
-
-          
-
-              {/* onclick bar */}
          
         </Toolbar>
     </AppBar>

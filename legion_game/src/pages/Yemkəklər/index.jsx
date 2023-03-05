@@ -1,11 +1,10 @@
 import PageContainer from "../../components/PageContainer";
 
-const İçkilər = () =>{
+const Yeməklər = () =>{
     return(
         <PageContainer>
-        
         </PageContainer>
     )
 }
 
-export default İçkilər;
+export default Yeməklər;

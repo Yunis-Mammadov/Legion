@@ -1,4 +1,3 @@
-import Footer from "../Footer/footer";
 import Header from "../Header/header";
 
 const PageContainer = ({children}) =>{
@@ -8,7 +7,6 @@ const PageContainer = ({children}) =>{
         <main>
             {children}
         </main>
-        <Footer/>
     </>
     )
 }

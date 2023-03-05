@@ -1,9 +1,16 @@
+import { Box } from "@mui/material";
 import PageContainer from "../../components/PageContainer";
+import './home.css';
+
 
 const Home = () =>{
     return(
         <PageContainer>
-         I am Home 
+           <Box>
+           <Box sx={{
+        }}>
+           </Box>
+            </Box>
         </PageContainer>
     )
 }
